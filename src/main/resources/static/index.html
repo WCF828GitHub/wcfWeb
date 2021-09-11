@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+    <link rel="stylesheet" href="webjars/bootstrap/3.0.0/css/bootstrap.css">
+    <script src="webjars/jquery/3.0.0/jquery.js"> </script>
+    <script src="webjars/bootstrap/3.0.0/js/bootstrap.js"></script>
+    <style>
+        #loginBox{
+           border-radius: 12px;
+           padding-top: 180px;
+           background-color: antiquewhite;
+           margin: 80px auto;
+           width: 450px;
+            height: 550px;
+            text-align: center;
+        }
+       .col-sm-10{
+           width: 300px;
+       }
+       .col-sm-2{
+           font-size: smaller;
+       }
+    </style>
+<body>
+    <div id="loginBox">
+        <form class="form-horizontal" role="form" action="login">
+            <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label" >名字</label>
+                <div class="col-sm-10">
+                    <input type="text" name="name" class="form-control" id="firstname" placeholder="请输入名字">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="passWord" class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="passWord" id="passWord" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">登录</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+    <script>
+        Math.random()
+    </script>
+</html>
